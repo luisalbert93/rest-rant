@@ -1,6 +1,6 @@
 const React = require('react')
 const Def = require('../default')
-//
+
 function new_form () {
     return (
         <Def>
@@ -27,7 +27,7 @@ function new_form () {
                 <label htmlFor="cuisines">Cuisines</label>
                 <input className="form-control" id="cuisines" name="cuisines" required />
               </div>
-              <input className='btn btn-primary' type="submit" value="Add Place" />
+              <input className="btn btn-primary" type="submit" value="Add Place" />
             </form>
           </main>
         </Def>

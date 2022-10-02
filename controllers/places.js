@@ -1,7 +1,12 @@
 const router = require('express').Router()
 
+router.post('/', (req, res) => {
+    console.log(req.body)
+    res.send('POST /places')
+  })
+  
 
-app.get('/', (req, res) => {
+router.get('/', (req, res) => {
   let places = [{
     name: 'H-Thai-ML',
     city: 'Seattle',
@@ -20,5 +25,8 @@ app.get('/', (req, res) => {
 
 })
 
+router.get('/new', (req, res) => {
+    res.render('places/new')
+  })
   
 module.exports = router
